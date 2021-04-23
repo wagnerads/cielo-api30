@@ -1,5 +1,3 @@
-require 'yaml'
-
 module Cielo
   module API30
   # Dados relacionados ao código LR da autorização

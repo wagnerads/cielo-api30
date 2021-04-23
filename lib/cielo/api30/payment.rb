@@ -1,6 +1,3 @@
-require 'cielo/api30/payment/status'
-require 'cielo/api30/return_info'
-
 module Cielo
   module API30
     class Payment < OptionTemplate
