@@ -13,6 +13,7 @@ module Cielo
                     :value
 
       def initialize(id, value)
+        super
         @id = id
         @value = value
       end

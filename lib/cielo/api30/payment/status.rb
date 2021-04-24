@@ -1,6 +1,6 @@
 module Cielo
   module API30
-    class Payment
+    class Payment < OptionTemplate
       module Status
         NOT_FINISHED      = 0
         AUTHORIZED        = 1

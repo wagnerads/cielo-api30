@@ -4,10 +4,10 @@ require 'cielo/api30/environment'
 require 'cielo/api30/merchant'
 require 'cielo/api30/client'
 
+require 'cielo/api30/option_template'
 require 'cielo/api30/payment/status'
 require 'cielo/api30/return_info'
 
-require 'cielo/api30/option_template'
 require 'cielo/api30/address'
 require 'cielo/api30/credit_card'
 require 'cielo/api30/customer'

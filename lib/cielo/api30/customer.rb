@@ -21,6 +21,7 @@ module Cielo
                     :phone
 
       def initialize(name)
+        super
         @name = name
       end
 

@@ -1,6 +1,6 @@
 module Cielo
   module API30
-    class Payment < Cielo::API30::OptionTemplate
+    class Payment < OptionTemplate
       PAYMENTTYPE_CREDITCARD = 'CreditCard'
       PAYMENTTYPE_DEBITCARD = 'DebitCard'
       PAYMENTTYPE_ELECTRONIC_TRANSFER = 'ElectronicTransfer'
@@ -49,6 +49,7 @@ module Cielo
                     :fraud_analysis
 
       def initialize(amount, installments: 1)
+        super
         @amount = amount
         @installments = installments
       end

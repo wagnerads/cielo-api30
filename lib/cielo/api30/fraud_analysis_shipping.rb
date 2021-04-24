@@ -15,6 +15,7 @@ module Cielo
                     :phone
 
       def initialize(addressee: nil, method: FraudAnalysisShipping::METHOD_NONE, phone: nil)
+        super
         @addressee = addressee
         @method = method
         @phone = phone
