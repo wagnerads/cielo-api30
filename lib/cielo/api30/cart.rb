@@ -4,7 +4,6 @@ module Cielo
       attr_accessor :items
 
       def initialize(items)
-        super
         @items = items
       end
 

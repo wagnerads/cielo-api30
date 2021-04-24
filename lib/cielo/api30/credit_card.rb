@@ -19,7 +19,6 @@ module Cielo
                     :card_token
 
       def initialize(args = {})
-        super
         @security_code = args[:security_code]
         @brand = args[:brand]
         @card_token = args[:token]

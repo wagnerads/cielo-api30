@@ -7,7 +7,6 @@ module Cielo
                     :browser_finger_print
 
       def initialize(email, ip_address, browser_finger_print, cookies_accepted: true)
-        super
         @email = email
         @ip_address = ip_address
         @cookies_accepted = cookies_accepted

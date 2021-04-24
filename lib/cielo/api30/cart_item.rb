@@ -7,7 +7,6 @@ module Cielo
                     :unit_price
 
       def initialize(name, quantity, sku, unit_price)
-        super
         @name = name
         @quantity = quantity
         @sku = sku

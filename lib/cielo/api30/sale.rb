@@ -6,7 +6,6 @@ module Cielo
                     :payment
 
       def initialize(merchant_order_id)
-        super
         @merchant_order_id = merchant_order_id
       end
 
