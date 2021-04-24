@@ -5,7 +5,7 @@ require 'cielo/api30/merchant'
 require 'cielo/api30/client'
 
 require 'cielo/api30/option_template'
-require 'cielo/api30/payment/status'
+require 'cielo/api30/payment_status'
 require 'cielo/api30/return_info'
 
 require 'cielo/api30/address'
