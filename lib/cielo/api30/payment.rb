@@ -115,7 +115,7 @@ module Cielo
         ].include?(status)
       end
 
-      def self.as_json(options = {})
+      def as_json(options = {})
         hash_compact!(
           ServiceTaxAmount: @service_tax_amount,
           Installments: @installments,
