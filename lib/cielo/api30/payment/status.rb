@@ -1,6 +1,7 @@
 module Cielo
   module API30
-    class PaymentStatus
+    class Payment < OptionTemplate
+      module Status
         NOT_FINISHED      = 0
         AUTHORIZED        = 1
         PAYMENT_CONFIRMED = 2
@@ -11,15 +12,16 @@ module Cielo
         ABORTED           = 13
         SCHEDULED         = 20
 
-      def self.success?(code)
-        [
-          AUTHORIZED,
-          PAYMENT_CONFIRMED,
-          VOIDED,
-          REFUNDED,
-          PENDING,
-          SCHEDULED
-        ].include?(code)
+        def self.success?(code)
+          [
+            AUTHORIZED,
+            PAYMENT_CONFIRMED,
+            VOIDED,
+            REFUNDED,
+            PENDING,
+            SCHEDULED
+          ].include?(code)
+        end
       end
     end
   end

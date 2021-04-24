@@ -100,8 +100,8 @@ module Cielo
 
       def success?
         [
-          PaymentStatus::AUTHORIZED,
-          PaymentStatus::PAYMENT_CONFIRMED
+          Payment::Status::AUTHORIZED,
+          Payment::Status::PAYMENT_CONFIRMED
         ].include?(status)
       end
 
@@ -111,7 +111,7 @@ module Cielo
 
       def void_success?
         [
-          PaymentStatus::VOIDED
+          Payment::Status::VOIDED
         ].include?(status)
       end
 
