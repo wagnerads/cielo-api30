@@ -16,7 +16,7 @@ module Cielo
       protected
 
       def hash_compact!(data)
-        data = data.reject! { |_k, v| v.nil? }
+        data = data.reject { |_k, v| v.nil? }
         data&.empty? ? nil : data
       end
     end

@@ -100,8 +100,8 @@ module Cielo
 
       def success?
         [
-          Payment::Status::AUTHORIZED,
-          Payment::Status::PAYMENT_CONFIRMED
+          PaymentStatus::AUTHORIZED,
+          PaymentStatus::PAYMENT_CONFIRMED
         ].include?(status)
       end
 
@@ -111,11 +111,11 @@ module Cielo
 
       def void_success?
         [
-          Payment::Status::VOIDED
+          PaymentStatus::VOIDED
         ].include?(status)
       end
 
-      def as_json(options = {})
+      def self.as_json(options = {})
         hash_compact!(
           ServiceTaxAmount: @service_tax_amount,
           Installments: @installments,
