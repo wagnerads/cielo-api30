@@ -16,7 +16,6 @@ module Cielo
                     :link
 
       def initialize(authorize_now: true)
-        super
         @authorize_now = authorize_now
       end
 

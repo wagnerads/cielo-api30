@@ -23,7 +23,6 @@ module Cielo
                     :void_on_high_risk
 
       def initialize(total_order_amount, finger_print_id: nil, provider: 'cybersource', sequence: SEQUENCE_AUTORIZE_FIRST, sequence_criteria: SEQUENCE_CRITERIA)
-        super
         @provider = provider
         @sequence = sequence
         @sequence_criteria = sequence_criteria

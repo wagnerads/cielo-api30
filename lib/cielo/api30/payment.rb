@@ -49,7 +49,6 @@ module Cielo
                     :fraud_analysis
 
       def initialize(amount, installments: 1)
-        super
         @amount = amount
         @installments = installments
       end
