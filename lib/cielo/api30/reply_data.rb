@@ -52,6 +52,7 @@ module Cielo
           PhoneInfoCode: @phone_info_code,
           SuspiciousInfoCode: @suspicious_info_code
         )
+      end
     end
   end
 end
