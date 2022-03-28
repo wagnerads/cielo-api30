@@ -43,7 +43,7 @@ module Cielo
         fraud_analysis.status_description = data['StatusDescription']
         fraud_analysis.transaction_amount = data['TransactionAmount']
         fraud_analysis.shipping = FraudAnalysisShipping.from_json(data['Shipping'])
-        fraud_analysis.merchant_defined_fields = data['MerchantDefinedFields'].map { |i| MerchantDefinedFields.from_json(i) }
+        fraud_analysis.merchant_defined_fields = data['MerchantDefinedFields']&.map { |i| MerchantDefinedFields.from_json(i) }
         fraud_analysis.fraud_analysis_reason_code = data['FraudAnalysisReasonCode']
         fraud_analysis.id = data['Id']
         fraud_analysis.reply_data = ReplyData.from_json(data['ReplyData'])

@@ -46,7 +46,8 @@ module Cielo
                     :digitable_line,
                     :address,
                     :return_info,
-                    :fraud_analysis
+                    :fraud_analysis,
+                    :voided_amount
 
       def initialize(amount, installments: 1)
         @amount = amount
