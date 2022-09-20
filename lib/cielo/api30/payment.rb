@@ -47,6 +47,7 @@ module Cielo
                     :address,
                     :return_info,
                     :fraud_analysis,
+                    :external_authentication,
                     :voided_amount
 
       def initialize(amount, installments: 1)
@@ -95,6 +96,7 @@ module Cielo
         payment.address = data['Address']
         payment.fraud_analysis = FraudAnalysis.from_json(data['FraudAnalysis'])
         payment.return_info = ReturnInfo.new(payment.return_code)
+        payment.external_authentication = ExternalAuthentication.from_json(data['ExternalAuthentication'])
 
         payment
       end
